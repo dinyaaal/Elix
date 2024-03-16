@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240317014912">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">Logo</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<div class="menu__items">
+								<a href="services.html" class="menu__item item-menu">
+									<div class="item-menu__body">
+										<h2 class="item-menu__title title">Services</h2>
+										<div class="item-menu__link"><span>Go to Services</span></div>
+									</div>
+								</a>
+								<a href="about.html" class="menu__item item-menu">
+									<div class="item-menu__body">
+										<h2 class="item-menu__title title">About Us</h2>
+										<div class="item-menu__link"><span>Go to About Us</span></div>
+									</div>
+								</a>
+								<a href="contact.html" class="menu__item item-menu">
+									<div class="item-menu__body">
+										<h2 class="item-menu__title title">Contact Us</h2>
+										<div class="item-menu__link"><span>Go to Contact Us</span></div>
+									</div>
+								</a>
+
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section data-watch class="about">
+				<div class="about__wrapper">
+					<div class="about__body body-about">
+						<div class="body-about__container">
+							<div class="body-about__block">
+								<div class="body-about__header">
+									<h1 data-prlx-mouse data-prlx-cx='1000' data-prlx-cy='100' class="body-about__bg-title">Your success</h1>
+									<h2 class="body-about__title title">Our goal is to always do a LX job</h2>
+								</div>
+
+
+								<ul class="body-about__items">
+									<li class="body-about__item body-about__item--active">About Us</li>
+									<li class="body-about__item">Partnerships</li>
+								</ul>
+								<ul class="body-about__content">
+									<li class="body-about__text body-about__text--active show">
+										<p>We specialize in crafting dynamic online solutions designed to propel growth by attracting a consistent stream of highly targeted, intent-driven online shoppers, thereby fueling expansion with precision.
+											Our team comprises top-tier experts, seasoned veterans from renowned online marketing firms, ensuring unparalleled expertise in the industry. Through rigorous market analysis and leveraging data-driven insights, we empower our partners to maximize their success
+										</p>
+									</li>
+									<li class="body-about__text">
+										<p>
+											Where collaboration meets innovation: We understand the value of strategic alliances and the transformative power they hold.
+											If you seek to amplify your online presence and are eager to explore new growth opportunities, we're here to forge impactful results. Together, let's unlock new possibilities and chart a path to success in the ever-evolving digital landscape.
+										</p>
+									</li>
+								</ul>
+							</div>
+
+							<a href="contact.html" class="body-about__link"><span>Contact Us</span></a>
+						</div>
+					</div>
+					<div class="about__image">
+						<picture><source srcset="img/about/01.webp" type="image/webp"><img class="ibg" src="img/about/01.jpg" alt="Image"></picture>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- Стилі для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 0.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #141414;
+			}
+
+			/* Блок з елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				/* max-width: 31.25rem; */
+				display: flex;
+				flex-direction: column;
+			}
+
+			.fls-preloader__text {
+				font-family: 'Montserrat';
+				font-weight: 800;
+				font-size: 5vw;
+				/* 1203/1440 */
+				background: linear-gradient(90.00deg, rgba(144, 228, 255, 0), rgb(144, 228, 255), rgba(144, 228, 255, 0) 50%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				animation-duration: 3s;
+				animation-name: animationgradienttitle;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+				background-size: 200%;
+			}
+
+			@keyframes animationgradienttitle {
+				0% {
+					background-position: 100% 0;
+				}
+
+				100% {
+					background-position: -100% 0;
+				}
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__text">Driving Digital Growth</div>
+						</div>
+					</div>`;
+					document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader');
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					document.documentElement.classList.add('loading');
+					document.documentElement.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						// showPecentLoad ? showPecentLoad.innerText = `${progress}%`: null;
+						// showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						const minimumDuration = 3000; // 5 seconds
+						const currentTime = new Date().getTime();
+						const elapsedTime = currentTime - startTime;
+
+						if (elapsedTime < minimumDuration) {
+							setTimeout(() => {
+								document.documentElement.classList.add('loaded');
+								document.documentElement.classList.remove('lock');
+								document.documentElement.classList.remove('loading');
+								preloader.remove();
+								preloaderContainer.remove();
+							}, minimumDuration - elapsedTime);
+						} else {
+							document.documentElement.classList.add('loaded');
+							document.documentElement.classList.remove('lock');
+							document.documentElement.classList.remove('loading');
+							preloader.remove();
+							preloaderContainer.remove();
+						}
+					}
+
+					const startTime = new Date().getTime();
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240317014912"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240317014912"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js?_v=20240317014912"></script> -->
+	<script src="js/app.min.js?_v=20240317014912"></script>
+
+</body>
+
+</html>
