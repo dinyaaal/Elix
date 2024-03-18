@@ -581,10 +581,6 @@ textarea.input {
   /* 48/40 */
 }
 
-.title--white {
-  color: #FFFFFF;
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -699,6 +695,7 @@ textarea.input {
 }
 
 .item-services__title {
+  color: #FFFFFF;
   margin-bottom: 1.25rem;
   -webkit-transform: translateY(3.125rem);
       -ms-transform: translateY(3.125rem);
