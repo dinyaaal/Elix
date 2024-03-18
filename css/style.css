@@ -1064,10 +1064,6 @@ input:valid ~ label {
   }
 
   .item-services__body {
-    padding-bottom: 3.125rem;
-  }
-
-  .item-services__body {
     gap: 3.125rem;
   }
 
@@ -1099,10 +1095,6 @@ input:valid ~ label {
 @media (max-width: 20em) {
   .title {
     font-size: 1.5rem;
-  }
-
-  .item-services__body {
-    padding-bottom: 1.25rem;
   }
 
   .item-services__body {
@@ -1150,6 +1142,12 @@ input:valid ~ label {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
             transform: translate(0);
+  }
+}
+
+@media (max-width: 61.99875em) and (max-width: 20em) {
+  .item-services__body {
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -1219,18 +1217,6 @@ input:valid ~ label {
 @supports not (font-size: clamp( 1.5rem , 1.1666666667rem  +  1.6666666667vw , 2.5rem )) {
     .title {
       font-size: calc(1.5rem + 1 * (100vw - 20rem) / 60);
-    }
-}
-
-@supports (padding-bottom: clamp( 1.25rem , 0.625rem  +  3.125vw , 3.125rem )) {
-    .item-services__body {
-      padding-bottom: clamp( 1.25rem , 0.625rem  +  3.125vw , 3.125rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 1.25rem , 0.625rem  +  3.125vw , 3.125rem )) {
-    .item-services__body {
-      padding-bottom: calc(1.25rem + 1.875 * (100vw - 20rem) / 60);
     }
 }
 
@@ -1315,6 +1301,26 @@ input:valid ~ label {
 @supports not (margin-bottom: clamp( 2.5rem , 1.6666666667rem  +  4.1666666667vw , 5rem )) {
     .form-contact__body:not(:last-child) {
       margin-bottom: calc(2.5rem + 2.5 * (100vw - 20rem) / 60);
+    }
+}
+}
+
+@media (max-width: 61.99875em) and (min-width: 80em) {
+  .item-services__body {
+    padding-bottom: 3.125rem;
+  }
+}
+
+@media (max-width: 61.99875em) and (min-width: 20em) and (max-width: 80em) {
+@supports (padding-bottom: clamp( 1.25rem , 0.625rem  +  3.125vw , 3.125rem )) {
+    .item-services__body {
+      padding-bottom: clamp( 1.25rem , 0.625rem  +  3.125vw , 3.125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.25rem , 0.625rem  +  3.125vw , 3.125rem )) {
+    .item-services__body {
+      padding-bottom: calc(1.25rem + 1.875 * (100vw - 20rem) / 60);
     }
 }
 }
