@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240317014912">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240318114747">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
-					<div class="header__logo">Logo</div>
+					<a href="services.html" class="header__logo"><span>Logo</span></a>
 					<div class="header__menu menu">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
@@ -59,12 +59,35 @@
 
 							<form action="#" class="contact__form form-contact">
 								<div class="form-contact__body">
-									<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="First name *" class="form-contact__input input">
-									<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Last name *" class="form-contact__input input">
-									<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Brand or company name *" class="form-contact__input input">
-									<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Website of your company or brand *" class="form-contact__input input">
-									<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email Address *" class="form-contact__input input">
-									<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="How can we help you? *" class="form-contact__input input">
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" placeholder="" data-error="Error" class="form-contact__input input">
+										<label for="">First name *</label>
+									</div>
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
+										<label for="">Last name *</label>
+									</div>
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
+
+										<label for="">Brand or company name *</label>
+									</div>
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
+
+										<label for="">Website of your company or brand *</label>
+									</div>
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
+
+										<label for="">Email Address *</label>
+									</div>
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
+
+										<label for="">How can we help you? *</label>
+									</div>
+
 								</div>
 								<button type="submit" class="form-contact__button button button--fw"><span>Submit</span></button>
 
@@ -99,7 +122,7 @@
 		}
 
 		.loaded body {
-			transition: opacity 0.5s ease 0s;
+			transition: opacity 1s ease 0s;
 			opacity: 1;
 			visibility: visible;
 		}
@@ -254,10 +277,10 @@
 
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240317014912"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240317014912"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js?_v=20240317014912"></script> -->
-	<script src="js/app.min.js?_v=20240317014912"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240318114747"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240318114747"></script>
+
+	<script src="js/app.min.js?_v=20240318114747"></script>
 
 </body>
 

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240317014912">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240318114747">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
-					<div class="header__logo">Logo</div>
+					<a href="services.html" class="header__logo"><span>Logo</span></a>
 					<div class="header__menu menu">
 						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<nav class="menu__body">
@@ -49,6 +49,7 @@
 		</header>
 		<main class="page">
 			<div class="services">
+
 				<div class="services__items horizontal">
 					<div class="services__item item-services panel">
 						<div class="item-services__bg">
@@ -134,50 +135,146 @@
 							<a href="" class="item-services__button button"><span>Learn more</span></a>
 						</div>
 					</div>
-					<div class="services__item item-services panel">
-						<div class="item-services__bg">
-							<picture><source srcset="img/services/01.webp" type="image/webp"><img class="ibg" src="img/services/01.jpg" alt="Image"></picture>
-						</div>
-						<div class="item-services__body">
-							<div class="item-services__content">
-								<h2 class="item-services__title title title--white">Boutiue Affiliate Marketing Network</h2>
-								<div class="item-services__text">
-									<p>Trusted partnerships that drive growth</p>
-								</div>
-							</div>
-							<a href="" class="item-services__button button"><span>Learn more</span></a>
-						</div>
-					</div>
-					<div class="services__item item-services panel">
-						<div class="item-services__bg">
-							<picture><source srcset="img/services/02.webp" type="image/webp"><img class="ibg" src="img/services/02.jpg" alt="Image"></picture>
-						</div>
-						<div class="item-services__body">
-							<div class="item-services__content">
-								<h2 class="item-services__title title title--white">Affiliate & Performance Marketing Services</h2>
-								<div class="item-services__text">
-									<p>Helping advertisers and publishers drive profitable growth</p>
-								</div>
-							</div>
-							<a href="" class="item-services__button button"><span>Learn more</span></a>
-						</div>
-					</div>
-					<div class="services__item item-services panel">
-						<div class="item-services__bg">
-							<picture><source srcset="img/services/03.webp" type="image/webp"><img class="ibg" src="img/services/03.jpg" alt="Image"></picture>
-						</div>
-						<div class="item-services__body">
-							<div class="item-services__content">
-								<h2 class="item-services__title title title--white">Media Buying</h2>
-								<div class="item-services__text">
-									<p>Acquiring your best customers at scale</p>
-								</div>
-							</div>
-							<a href="" class="item-services__button button"><span>Learn more</span></a>
-						</div>
-					</div>
-				</div>
 
+				</div>
+				<!-- Оболонка слайдера -->
+				<!-- <div class="services__slider swiper">
+						<div class="services__items swiper-wrapper">
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/01.webp" type="image/webp"><img class="ibg" src="img/services/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Boutiue Affiliate Marketing Network</h2>
+										<div class="item-services__text">
+											<p>Trusted partnerships that drive growth</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/02.webp" type="image/webp"><img class="ibg" src="img/services/02.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Affiliate & Performance Marketing Services</h2>
+										<div class="item-services__text">
+											<p>Helping advertisers and publishers drive profitable growth</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/03.webp" type="image/webp"><img class="ibg" src="img/services/03.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Media Buying</h2>
+										<div class="item-services__text">
+											<p>Acquiring your best customers at scale</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/01.webp" type="image/webp"><img class="ibg" src="img/services/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Boutiue Affiliate Marketing Network</h2>
+										<div class="item-services__text">
+											<p>Trusted partnerships that drive growth</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/02.webp" type="image/webp"><img class="ibg" src="img/services/02.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Affiliate & Performance Marketing Services</h2>
+										<div class="item-services__text">
+											<p>Helping advertisers and publishers drive profitable growth</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/03.webp" type="image/webp"><img class="ibg" src="img/services/03.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Media Buying</h2>
+										<div class="item-services__text">
+											<p>Acquiring your best customers at scale</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/01.webp" type="image/webp"><img class="ibg" src="img/services/01.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Boutiue Affiliate Marketing Network</h2>
+										<div class="item-services__text">
+											<p>Trusted partnerships that drive growth</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/02.webp" type="image/webp"><img class="ibg" src="img/services/02.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Affiliate & Performance Marketing Services</h2>
+										<div class="item-services__text">
+											<p>Helping advertisers and publishers drive profitable growth</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+							<div class="services__item item-services panel swiper-slide">
+								<div class="item-services__bg">
+									<picture><source srcset="img/services/03.webp" type="image/webp"><img class="ibg" src="img/services/03.jpg" alt="Image"></picture>
+								</div>
+								<div class="item-services__body">
+									<div class="item-services__content">
+										<h2 class="item-services__title title title--white">Media Buying</h2>
+										<div class="item-services__text">
+											<p>Acquiring your best customers at scale</p>
+										</div>
+									</div>
+									<a href="" class="item-services__button button"><span>Learn more</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-pagination"></div>
+				
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					
+						<div class="swiper-scrollbar"></div>
+					</div> -->
 			</div>
 		</main>
 		<footer class="footer">
@@ -199,7 +296,7 @@
 		}
 
 		.loaded body {
-			transition: opacity 0.5s ease 0s;
+			transition: opacity 1s ease 0s;
 			opacity: 1;
 			visibility: visible;
 		}
@@ -354,10 +451,10 @@
 
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240317014912"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240317014912"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js?_v=20240317014912"></script> -->
-	<script src="js/app.min.js?_v=20240317014912"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240318114747"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240318114747"></script>
+
+	<script src="js/app.min.js?_v=20240318114747"></script>
 
 </body>
 
