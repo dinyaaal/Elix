@@ -361,6 +361,27 @@
             end: () => "+=" + document.querySelector(".services__items").offsetWidth
         }
     });
+    const inputBoxes = document.querySelectorAll(".inputBox");
+    inputBoxes.forEach((inputBox => {
+        const input = inputBox.querySelector("input");
+        const label = inputBox.querySelector("label");
+        input.addEventListener("focus", (function() {
+            this.classList.add("focused");
+            if (label) label.classList.add("label-focused");
+        }));
+        input.addEventListener("blur", (function() {
+            if (this.value.trim() === "") {
+                this.classList.remove("focused");
+                if (label) label.classList.remove("label-focused");
+            }
+        }));
+        input.addEventListener("input", (function() {
+            if (this.value.trim() !== "") {
+                this.classList.add("focused");
+                if (label) label.classList.add("label-focused");
+            }
+        }));
+    }));
     window["FLS"] = 0;
     isWebp();
     menuInit();
