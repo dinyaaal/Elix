@@ -108,6 +108,26 @@ body {
       overscroll-behavior: none;
 }
 
+.lock body {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+
+.loading body {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loaded body {
+  -webkit-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+  opacity: 1;
+  visibility: visible;
+}
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -973,6 +993,84 @@ input:focus ~ label,
 input:valid ~ label {
   top: -5px;
   color: #90E4FF;
+}
+
+/* Головний блок */
+
+.fls-preloader {
+  pointer-events: none;
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #141414;
+}
+
+/* Блок з елементами */
+
+.fls-preloader__body {
+  padding: 0.93rem;
+  /* max-width: 31.25rem; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fls-preloader__text {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 5vw;
+  /* 1203/1440 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(144, 228, 255, 0)), color-stop(rgb(144, 228, 255)), color-stop(50%, rgba(144, 228, 255, 0)));
+  background: linear-gradient(90deg, rgba(144, 228, 255, 0), rgb(144, 228, 255), rgba(144, 228, 255, 0) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: animationgradienttitle;
+          animation-name: animationgradienttitle;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-size: 200%;
+}
+
+@-webkit-keyframes animationgradienttitle {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 @media (min-width: 29.99875em) {

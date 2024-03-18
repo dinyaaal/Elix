@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240318123002">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240318125619">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,31 +61,31 @@
 								<div class="form-contact__body">
 									<div class="inputBox">
 										<input data-required required autocomplete="off" type="text" name="form[]" placeholder="" data-error="Error" class="form-contact__input input">
-										<label for="">First name *</label>
+										<label>First name *</label>
 									</div>
 									<div class="inputBox">
 										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
-										<label for="">Last name *</label>
-									</div>
-									<div class="inputBox">
-										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
-
-										<label for="">Brand or company name *</label>
+										<label>Last name *</label>
 									</div>
 									<div class="inputBox">
 										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
 
-										<label for="">Website of your company or brand *</label>
+										<label>Brand or company name *</label>
 									</div>
 									<div class="inputBox">
 										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
 
-										<label for="">Email Address *</label>
+										<label>Website of your company or brand *</label>
 									</div>
 									<div class="inputBox">
 										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
 
-										<label for="">How can we help you? *</label>
+										<label>Email Address *</label>
+									</div>
+									<div class="inputBox">
+										<input data-required required autocomplete="off" type="text" name="form[]" data-error="Error" class="form-contact__input input">
+
+										<label>How can we help you? *</label>
 									</div>
 
 								</div>
@@ -109,96 +109,10 @@
 		</footer>
 	</div>
 	<!-- Стилі для body -->
-	<style>
-		.lock body {
-			overflow: hidden;
-			touch-action: none;
-			overscroll-behavior: none;
-		}
 
-		.loading body {
-			opacity: 0;
-			visibility: hidden;
-		}
-
-		.loaded body {
-			transition: opacity 1s ease 0s;
-			opacity: 1;
-			visibility: visible;
-		}
-	</style>
 	<div id="fls-preloader">
 		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
 		<!-- Стилі для прелоадера -->
-		<style>
-			* {
-				padding: 0px;
-				margin: 0px;
-				border: 0px;
-			}
-
-			*,
-			*:before,
-			*:after {
-				box-sizing: border-box;
-			}
-
-			html {
-				overflow: hidden;
-				touch-action: none;
-				overscroll-behavior: none;
-			}
-
-			/* Головний блок */
-			.fls-preloader {
-				pointer-events: none;
-				z-index: -1;
-				position: fixed;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: #141414;
-			}
-
-			/* Блок з елементами */
-			.fls-preloader__body {
-				padding: 0.93rem;
-				/* max-width: 31.25rem; */
-				display: flex;
-				flex-direction: column;
-			}
-
-			.fls-preloader__text {
-				font-family: 'Montserrat';
-				font-weight: 800;
-				font-size: 5vw;
-				/* 1203/1440 */
-				background: linear-gradient(90.00deg, rgba(144, 228, 255, 0), rgb(144, 228, 255), rgba(144, 228, 255, 0) 50%);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
-				text-fill-color: transparent;
-				animation-duration: 3s;
-				animation-name: animationgradienttitle;
-				animation-iteration-count: 1;
-				animation-fill-mode: forwards;
-				background-size: 200%;
-			}
-
-			@keyframes animationgradienttitle {
-				0% {
-					background-position: 100% 0;
-				}
-
-				100% {
-					background-position: -100% 0;
-				}
-			}
-		</style>
 		<!-- Скріпт прелоадера -->
 		<script>
 			function preloader() {
@@ -213,8 +127,7 @@
 					</div>`;
 					document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
 
-					const
-						preloader = document.querySelector('.fls-preloader');
+					const preloader = document.querySelector('.fls-preloader');
 
 					let imagesLoadedCount = counter = progress = 0;
 
@@ -277,10 +190,10 @@
 
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240318123002"></script>
-	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240318123002"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js?_v=20240318125619"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js?_v=20240318125619"></script>
 
-	<script src="js/app.min.js?_v=20240318123002"></script>
+	<script src="js/app.min.js?_v=20240318125619"></script>
 
 </body>
 
